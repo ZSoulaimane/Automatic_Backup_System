@@ -28,7 +28,7 @@ class PingingSystem(object):
                     self.updateStatus("False",listwebsite[i][1])
                     lists.append(listwebsite[i][1])
             
-        #self.mail(x)
+        #self.mail(x) take of the '#' to send mails
 
 
     def returnWebSites(self):
@@ -101,8 +101,8 @@ class PingingSystem(object):
     def mail(self,x):
         mail_content = "the web sites "+ str(x) +" are down it should be restared in order to back it up on it's time\n thanks!"
 
-        sender_address = 'soulaimane.studies@gmail.com'
-        sender_pass = '3691028754a'
+        sender_address = 'soulaimane.studies@gmail.com' # your Email
+        sender_pass = '' #your password here
         receiver_address = 'zar.Soulaimane@gmail.com'
 
         message = MIMEMultipart()
